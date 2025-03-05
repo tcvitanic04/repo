@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Primer ejemplo</title>
+        <!-- Usando CSS Grid Generator - https://cssgridgenerator.io/ -->
+        <style>
+            body {
+                font-family: ABC Favorit;
+            }
+
+            .parent {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 8px;
+            }
+            footer{
+                padding-top:10vh;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Estadísticas Misceláneas de Chile 2024 (INE)</h1>
+        </header>
+
+        <main class="parent">
+            <div class="div1">
+                <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                    <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                    <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                    <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="91 9" stroke-dashoffset="0"></circle>
+                    <text x="21" y="22" font-size="5" text-anchor="middle" fill="pink"> 91% </text>
+                </svg>
+                <p> 91% de los Acuerdos de Unión Civil tienen contrayentes de diferente sexo (Datos del INE, 2024). </p>
+            </div>
+            <div class="div2">
+                <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                    <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                    <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                    <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="0"></circle>
+                     <text x="21" y="22" font-size="5" text-anchor="middle" fill="pink"> 30% </text>
+                </svg>
+                <p> El 30% de nacimientos totales tiene al grupo de edad de la madre entre 30 a 34 años. </p>
+            </div>
+            <div class="div3">
+                <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                    <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                    <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                    <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="36 64" stroke-dashoffset="0"></circle>
+                     <text x="21" y="22" font-size="5" text-anchor="middle" fill="pink"> 36% </text>
+                </svg>
+                <p>el 36% de las defunciones totales del país se registraton en la Región Metropolitana. </p>
+            </div>
+            <div class="div4">
+                <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                    <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                    <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                    <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="51 49" stroke-dashoffset="0"></circle>
+                     <text x="21" y="22" font-size="5" text-anchor="middle" fill="pink"> 51% </text>
+                </svg>
+                <p> El 51% de los nacimientos fueron hombres. </p>
+            </div>
+        </main>
+
+        <footer>
+            <p><small> Tomislav Cvitanic 2025</small></p>
+        </footer>
+    </body>
+</html>
